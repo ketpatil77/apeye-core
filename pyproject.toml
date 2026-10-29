@@ -94,8 +94,9 @@ exclude = [
     "doc-source",
 ]
 
-[tool.hatch.build.sdist]
-include = [ "apeye_core", "requirements.txt",]
+[tool.hatch.build.targets.sdist]
+include = [ "apeye_core", "requirements.txt", "tests", "tox.ini",]
+exclude = []
 
 [tool.hatch.build.wheel]
 include = [ "apeye_core",]
